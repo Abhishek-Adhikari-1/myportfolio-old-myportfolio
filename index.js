@@ -60,22 +60,22 @@ sr.reveal(".first_scroll_html", {
 sr.reveal(".first_scroll_js", {
   origin: "left",
   distance: "60px",
-  delay: 2800,
+  delay: 2100,
 });
 sr.reveal(".first_scroll_css", {
   origin: "left",
   distance: "60px",
-  delay: 3800,
+  delay: 2800,
 });
 sr.reveal(".first_scroll_react", {
   origin: "left",
   distance: "60px",
-  delay: 4800,
+  delay: 3400,
 });
 sr.reveal(".first_scroll_php", {
   origin: "right",
   distance: "60px",
-  delay: 1800,
+  delay: 4000,
 });
 sr.reveal(".first_scroll_c", {
   origin: "right",
@@ -90,22 +90,22 @@ sr.reveal(".first_scroll_py", {
 sr.reveal(".first_scroll_qleft1", {
   origin: "left",
   distance: "60px",
-  delay: 1800,
+  delay: 1100,
 });
 sr.reveal(".first_scroll_qright1", {
   origin: "right",
   distance: "60px",
-  delay: 2800,
+  delay: 1600,
 });
 sr.reveal(".first_scroll_qleft2", {
   origin: "left",
   distance: "60px",
-  delay: 3800,
+  delay: 2100,
 });
 sr.reveal(".first_scroll_qright2", {
   origin: "right",
   distance: "60px",
-  delay: 4800,
+  delay: 2600,
 });
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
