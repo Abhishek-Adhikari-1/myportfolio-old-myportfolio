@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Abhishek</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="index.css"
+      media="screen, print"
+    />
+    <link rel="icon" href="icon-black.png" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script type="text/javascript" src="jQuery.js"></script>
+    <script type="text/javascript" src="Typed.js"></script>
+    <script type="text/javascript" src="Scroll_reveal.js"></script>
+  </head>
+  <body>
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    <div id="load_main">
+      <header class="header" id="header">
+        <nav class="nav container nav_large">
+          <a href="#" class="nav_name">Abhishek</a>
+          <div class="nav_menu" id="nav-menu">
+            <ul class="nav_list grid">
+              <li class="nav_item">
+                <a href="#home" class="nav_link active-link">
+                  <div class="hov">
+                    <i class="uil uil-estate nav_icon"></i>Home
+                  </div>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#about" class="nav_link">
+                  <div class="hov">
+                    <i class="uil uil-user nav_icon"></i>About
+                  </div>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#skills" class="nav_link">
+                  <div class="hov">
+                    <i class="uil uil-file-alt nav_icon"></i>Skills
+                  </div></a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#qualifications" class="nav_link">
+                  <div class="hov">
+                    <i class="uil uil-graduation-cap nav_icon"></i
+                    >Qualifications
+                  </div></a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="#portfolio" class="nav_link"
+                  ><div class="hov">
+                    <i class="uil uil-scenery nav_icon"></i>Portfolio
+                  </div>
+                </a>
+              </li>
+              <li class="nav_item">
+                <a href="#contact" class="nav_link"
+                  ><div class="hov">
+                    <i class="uil uil-message nav_icon"></i>Contact
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <i class="uil uil-times nav_close" id="nav_close"></i>
+          </div>
+          <div class="nav_btns">
+            <abbr title="Change the theme of the page to Dark/Light">
+              <i class="uil uil-moon change-theme" id="theme-button"></i
+            ></abbr>
+            <div class="nav_toggle" id="nav-toggle">
+              <i class="uil uil-apps"></i>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="home section" id="home">
+          <div class="home_container container grid">
+            <div class="home_content grid">
+              <div class="home_img">
+                <svg class="home_blob" viewBox="0 0 200 187">
+                  <mask id="mask0" mask-type="alpha">
+                    <path
+                      fill=""
+                      d="M45.4,-8.1C54.7,14.1,55.4,45.7,37.4,61.1C19.3,76.5,-17.5,75.7,-35.9,59.9C-54.2,44.1,-54,13.3,-44.9,-8.5C-35.9,-30.3,-17.9,-43.1,0,-43.1C18,-43.1,36,-30.3,45.4,-8.1Z"
+                      transform="translate(100 100)"
+                    />
+                  </mask>
+                  <g mask="url(#mask0)">
+                    <path
+                      fill=""
+                      d="M45.4,-8.1C54.7,14.1,55.4,45.7,37.4,61.1C19.3,76.5,-17.5,75.7,-35.9,59.9C-54.2,44.1,-54,13.3,-44.9,-8.5C-35.9,-30.3,-17.9,-43.1,0,-43.1C18,-43.1,36,-30.3,45.4,-8.1Z"
+                      transform="translate(100 100)"
+                    />
+                    <image
+                      class="home_blob-img"
+                      xlink:href="Abhishek_Profile.png"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="home_data">
+                <h1 class="home_title">Hi, I'am</h1>
+                <h3 class="home_subtitle">
+                   <span class="typped" onload="my()"></span>
+                </h3>
+                <p class="home_description">
+                  Gaining experience in wed design and knowledge, producing
+                  quality work.
+                </p>
+                <a href="#contact" class="button button--flex">
+                  Contact Me<i class="uil uil-message button_icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="home_scroll home_first_scroll">
+              <a href="#about" class="home_scroll-button button--flex">
+                <i class="uil uil-mouse-alt home_scroll-mouse"></i>
+                <span class="home_scroll-name">Scroll down</span>
+                <i class="uil uil-arrow-down home_scroll-arrow"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section" id="about">
+          <h2 class="section_title first_scroll_up">About Me</h2>
+          <span class="section_subtitle first_scroll_up">My Introduction</span>
+          <div class="about_container container grid">
+            <img
+              src="Abhishek.jpg"
+              alt="Image"
+              class="about_img first_scroll_left_img"
+            />
+            <div class="about_data">
+              <p class="about_description first_scroll_down">
+                Web developer[learner] with serious passion and some knowledge.
+                I design and code beautifully simple things, and I love what I
+                do. I value simple content structure, clean design patterns, and
+                thoughtful interactions. I like to code things and enjoy
+                bringing ideas to life in the browser.
+              </p>
+              <div class="about_info first_scroll_right">
+                <div>
+                  <span class="about_info-title">02+</span>
+                  <span class="about_info-name">Years<br />experience</span>
+                </div>
+                <div>
+                  <span class="about_info-title">07+</span>
+                  <span class="about_info-name">Languages<br />learned</span>
+                </div>
+                <div>
+                  <span class="about_info-title">03+</span>
+                  <span class="about_info-name">Programs<br />winned</span>
+                </div>
+              </div>
+              <div class="about_buttons">
+                <a href="CV.pdf" download="" class="button button--flex">
+                  Download CV <i class="uil uil-download-alt button_icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="skills section" id="skills">
+          <h2 class="section_title first_scroll_up">Skills</h2>
+          <span class="section_subtitle first_scroll_up"
+            >My Teachnical Level</span
+          >
+          <div class="skills_container container grid">
+            <div class="skills_flex">
+              <div class="skills_content skills_open">
+                <div class="skills_header">
+                  <i
+                    class="uil uil-brackets-curly skills_icon first_scroll_left"
+                  ></i>
+                  <div>
+                    <h1 class="skills_titlefb first_scroll_up">
+                      Frontend developer
+                    </h1>
+                    <span class="skills_subtitle first_scroll_right"
+                      >More than 2 years
+                    </span>
+                  </div>
+                  <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid">
+                  <div class="skills_data first_scroll_html">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">HTML</h3>
+                      <span class="skills_number">80%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_html"></span>
+                    </div>
+                  </div>
+                  <div class="skills_data first_scroll_js">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">JavaScript</h3>
+                      <span class="skills_number">55%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_js"></span>
+                    </div>
+                  </div>
+                  <div class="skills_data first_scroll_css">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">CSS</h3>
+                      <span class="skills_number">65%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_css"></span>
+                    </div>
+                  </div>
+                  <div class="skills_data first_scroll_react">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">React</h3>
+                      <span class="skills_number">43%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_react"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--==================== SKILL 2 ====================-->
+              <div class="skills_content skills_close">
+                <div class="skills_header">
+                  <i
+                    class="uil uil-server-network skills_icon first_scroll_left"
+                  ></i>
+                  <div>
+                    <h1 class="skills_titlefb first_scroll_up">
+                      Backend developer
+                    </h1>
+                    <span class="skills_subtitle first_scroll_right"
+                      >More than 1 years
+                    </span>
+                  </div>
+                  <i class="uil uil-angle-down skills_arrow"></i>
+                </div>
+                <div class="skills_list grid backend">
+                  <div class="skills_data first_scroll_php">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">PHP</h3>
+                      <span class="skills_number">25%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_php"></span>
+                    </div>
+                  </div>
+                  <div class="skills_data first_scroll_c">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">C#</h3>
+                      <span class="skills_number">35%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_c"></span>
+                    </div>
+                  </div>
+                  <div class="skills_data first_scroll_py">
+                    <div class="skills_titles">
+                      <h3 class="skills_name">PYTHON</h3>
+                      <span class="skills_number">20%</span>
+                    </div>
+                    <div class="skills_bar">
+                      <span class="skills_percentage skills_py"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="qualification section" id="qualifications">
+          <h2 class="section_title first_scroll_up">Qualification</h2>
+          <span class="section_subtitle first_scroll_up"
+            >My personal journey</span
+          >
+          <div class="qualification_container container grid">
+            <div class="qualification_tabs first_scroll_down">
+              <div class="qualification_button button--flex">
+                <i class="uil uil-graduation-cap qualification_icon"></i>
+                Education
+              </div>
+            </div>
+            <div class="qualification_sections">
+              <div class="qualification_content">
+                <div class="qualification_data first_scroll_qleft1">
+                  <div class="left">
+                    <h3 class="qualification_title">+2 Science</h3>
+                    <span class="qualification_subtitle"
+                      >Capital College<br />& Research Center - Kathmandu</span
+                    >
+                    <div class="qualification_calender">
+                      <i class="uil uil-calender"></i>
+                      2078 - Current study
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                  </div>
+                </div>
+                <div class="qualification_data first_scroll_qright1">
+                  <div></div>
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification_title">Secondary School</h3>
+                    <span class="qualification_subtitle"
+                      >Balmeeki Memorial - Morang<br />[substituted for 1 year
+                      to Marigold]</span
+                    >
+                    <div class="qualification_calender">
+                      <i class="uil uil-calender"></i>
+                      2072 - 2078
+                    </div>
+                  </div>
+                </div>
+                <div class="qualification_data first_scroll_qleft2">
+                  <div class="left">
+                    <h3 class="qualification_title">Secondary School</h3>
+                    <span class="qualification_subtitle"
+                      >Marigold - Bhaktapur<br />[substituted for 1 year from
+                      Balmeeki]</span
+                    >
+                    <div class="qualification_calender">
+                      <i class="uil uil-calender"></i>
+                      2077 - 2077
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                  </div>
+                </div>
+                <div class="qualification_data first_scroll_qright2">
+                  <div></div>
+                  <div>
+                    <span class="qualification_rounder"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification_title">Primary School</h3>
+                    <span class="qualification_subtitle"
+                      >K.B Memorial - Morang</span
+                    >
+                    <div class="qualification_calender">
+                      <i class="uil uil-calender"></i>
+                      2064 - 2072
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio section" id="portfolio">
+          <div class="portfolio_container container grid">
+            <h2 class="section_title">Portfolio</h2>
+            <span class="section_subtitle">Most recent work</span>
+          </div>
+          <section class="project section">
+            <div class="project_bg">
+              <div class="project_container container grid">
+                <div class="project_data">
+                  <h2 class="project_title first_scroll_up">
+                    You have a new project
+                  </h2>
+                  <p class="project_description first_scroll_left">
+                    Contact me now and put your project a new life in the
+                    browser.
+                  </p>
+                  <a
+                    href="#contact"
+                    class="button button--flex button--white first_scroll_down"
+                  >
+                    Contact Me
+                    <i class="uil uil-message project_icon button_icon"></i>
+                  </a>
+                </div>
+                <img
+                  src="icon-white.png"
+                  alt="Image"
+                  class="project_img first_scroll_right"
+                />
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="testimonial section"></section>
+        <section class="contact section" id="contact">
+          <h2 class="section_title first_scroll_up">Contact Me</h2>
+          <span class="section_subtitle first_scroll_up">Get in touch</span>
+          <div class="contact_container container grid">
+            <div>
+              <div class="contact_information first_scroll_html">
+                <i class="uil uil-phone contact_icon"></i>
+                <div>
+                  <h3 class="contact_title">Call Me</h3>
+                  <span class="contact_subtitle">+977 9811343299</span>
+                </div>
+              </div>
+              <div class="contact_information first_scroll_js">
+                <i class="uil uil-envelope contact_icon"></i>
+                <div>
+                  <h3 class="contact_title">E-mail</h3>
+                  <span class="contact_subtitle"
+                    >adhikaryabhishek209@gmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="contact_information first_scroll_css">
+                <i class="uil uil-map-marker contact_icon"></i>
+                <div>
+                  <h3 class="contact_title">Location</h3>
+                  <span class="contact_subtitle"
+                    >Madhyapurthimi-03, Kausaltar</span
+                  >
+                </div>
+              </div>
+            </div>
+            <form class="contact_form grid">
+              <div class="contact_inputs grid">
+                <div class="contact_content first_scroll_down">
+                  <label for="id-name" class="contact_label">Name</label>
+                  <span id="name-error" class="error"></span>
+                  <input
+                    type="text"
+                    class="contact_input"
+                    id="id-name"
+                    onkeyup="return validateName()"
+                  />
+                </div>
+                <div class="contact_content first_scroll_down">
+                  <label for="id-email" class="contact_label">Email</label>
+                  <span id="email-error" class="error"></span>
+                  <input
+                    type="email"
+                    class="contact_input"
+                    id="id-email"
+                    onkeyup="return validateEmail()"
+                  />
+                </div>
+              </div>
+              <div class="contact_content first_scroll_down">
+                <label for="id-project" class="contact_label">Project</label>
+                <span id="project-error" class="error"></span>
+                <input
+                  type="text"
+                  class="contact_input"
+                  id="id-project"
+                  onkeyup="return validateProject()"
+                />
+              </div>
+              <div class="contact_content first_scroll_down">
+                <label for="textarea" class="contact_label">Message</label>
+                <textarea
+                  name=""
+                  id="textarea"
+                  cols="0"
+                  rows="5"
+                  class="contact_input"
+                ></textarea>
+              </div>
+              <div class="first_scroll_left">
+                <button
+                  type="submit"
+                  class="button button--flex2"
+                  id="send"
+                  onclick="return validateForm()"
+                >
+                  Send Message
+                  <i class="uil uil-message button_icon" id="send_svg"></i>
+                </button>
+                <span id="submit-error"></span>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer_bg">
+          <div class="footer_container container">
+            <div class="footer_social">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063712182245"
+                target="_blank"
+                class="footer_social"
+              >
+                <i class="uil uil-facebook-f"></i>
+              </a>
+            </div>
+            <div class="footer_social">
+              <a
+                href="https://www.instagram.com/unknown_account835/"
+                target="_blank"
+                class="footer_social"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
+            <div class="footer_social">
+              <a href="#" target="_blank" class="footer_social">
+                <i class="uil uil-twitter-alt"></i>
+              </a>
+            </div>
+          </div>
+          <p class="footer_copy">&#169;&nbsp;Abhishek, All rights reserved.</p>
+        </div>
+      </footer>
+      <a href="#home" class="scrollup" id="scroll-up">
+        <div class="goto">Go to</div>
+        <i class="uil uil-arrow-up scrollup_icon"></i>
+      </a>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
