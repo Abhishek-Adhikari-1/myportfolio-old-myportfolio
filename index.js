@@ -95,17 +95,17 @@ sr.reveal(".first_scroll_qleft1", {
 sr.reveal(".first_scroll_qright1", {
   origin: "right",
   distance: "60px",
-  delay: 1600,
+  delay: 1400,
 });
 sr.reveal(".first_scroll_qleft2", {
   origin: "left",
   distance: "60px",
-  delay: 2100,
+  delay: 1700,
 });
 sr.reveal(".first_scroll_qright2", {
   origin: "right",
   distance: "60px",
-  delay: 2600,
+  delay: 2000,
 });
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
