@@ -110,6 +110,17 @@ body {
   background-attachment: fixed;
   margin: -100px 0 0 -100px;
 }
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999;
+}
 body {
   margin: 0 0 var(--header-height) 0;
   font-family: var(--body-font);
