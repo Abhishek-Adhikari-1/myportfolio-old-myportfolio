@@ -1,38 +1,69 @@
 window.onbeforeunload = setTimeout(() => {
   window.scrollTo(0, 0);
 }, 700);
+
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+themeButton.addEventListener("click", () => {
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
 const coords = { x: -100, y: -100 };
 const circles = document.querySelectorAll(".circle");
 
-const colors = [
-    "hsl(30, 100%, 71%)",
-    "hsl(28, 97%, 70%)",
-    "hsl(23, 91%, 68%)",
-    "hsl(22, 88%, 67%)",
-    "hsl(17, 82%, 65%)",
-    "hsl(15, 79%, 65%)",
-    "hsl(8, 71%, 63%)",
-    "hsl(5, 67%, 62%)",
-    "hsl(358, 60%, 59%)",
-    "hsl(355, 58%, 57%)",
-    "hsl(347, 53%, 51%)",
-    "hsl(345, 53%, 49%)",
-    "hsl(338, 60%, 44%)",
-    "hsl(335, 64%, 41%)",
-    "hsl(327, 76%, 35%)",
-    "hsl(324, 82%, 32%)",
-    "#hsl(316, 100%, 26%)",
-    "hsl(314, 100%, 24%)",
-    "hsl(305, 100%, 20%)",
-    "hsl(301, 100%, 19%)",
-    "hsl(285, 100%, 19%)",
-    "hsl(279, 100%, 18%)",
-];
+// const colors = [
+//     "hsl(30, 100%, 71%)",
+//     "hsl(28, 97%, 70%)",
+//     "hsl(23, 91%, 68%)",
+//     "hsl(22, 88%, 67%)",
+//     "hsl(17, 82%, 65%)",
+//     "hsl(15, 79%, 65%)",
+//     "hsl(8, 71%, 63%)",
+//     "hsl(5, 67%, 62%)",
+//     "hsl(358, 60%, 59%)",
+//     "hsl(355, 58%, 57%)",
+//     "hsl(347, 53%, 51%)",
+//     "hsl(345, 53%, 49%)",
+//     "hsl(338, 60%, 44%)",
+//     "hsl(335, 64%, 41%)",
+//     "hsl(327, 76%, 35%)",
+//     "hsl(324, 82%, 32%)",
+//     "#hsl(316, 100%, 26%)",
+//     "hsl(314, 100%, 24%)",
+//     "hsl(305, 100%, 20%)",
+//     "hsl(301, 100%, 19%)",
+//     "hsl(285, 100%, 19%)",
+//     "hsl(279, 100%, 18%)",
+// ];
 
 circles.forEach((circle, index) => {
     circle.x = 0;
     circle.y = 0;
-    circle.style.backgroundColor = colors[index % colors.length];
+    getCurrentTheme();
+  if (selectedTheme === "light") {
+      circle.style.backColor = "black";
+  }
+  else{
+    circle.style.backColor = "white";
+  }
+//     circle.style.backgroundColor = colors[index % colors.length];
 });
 
 window.addEventListener("mousemove", (e) => {
@@ -219,29 +250,6 @@ skillsHeader.forEach((efgh) => {
   efgh.addEventListener("click", toggleSkills);
 });
 
-const themeButton = document.getElementById("theme-button");
-const darkTheme = "dark-theme";
-const iconTheme = "uil-sun";
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
-const getCurrentTheme = () =>
-  document.body.classList.contains(darkTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
-if (selectedTheme) {
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme
-  );
-  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme
-  );
-}
-themeButton.addEventListener("click", () => {
-  document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
-});
 const textarea = document.getElementById("textarea");
 textarea.addEventListener("keyup", (e) => {
   var scHeight = e.target.scrollHeight;
