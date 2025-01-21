@@ -63,7 +63,7 @@ circles.forEach((circle, index) => {
   else{
     circle.style.backColor = "white";
   }
-//     circle.style.backgroundColor = colors[index % colors.length];
+     circle.style.backgroundColor = colors[index % colors.length];
 });
 
 window.addEventListener("mousemove", (e) => {
